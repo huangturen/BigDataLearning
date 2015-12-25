@@ -1,0 +1,29 @@
+学习网址：http://www.nowcoder.com/live/3/1/1
+1.大数据的特征：4V（Volume，variety,velocity,value）
+
+2.大数据的工程技术
+Hadoop能够对大量数据进行分布式处理的软件框架
+Hadoop最核心的设计：HDFS和MapReduce 
+
+2.1 HDFS Hadoop分布式文件系统
+HDFS特点：
+
+流式访问、一次写多次读、本地计算、容错与备份
+
+2.2 MapReduce 
+map:解析
+reduce:数据聚合、抽取
+
+map:首先在块内解析，聚合，然后进行shuffle（考虑负载均衡），然后merge（相同key的项合并）
+
+reduce：在merge的结果中进行结果抽取
+
+2.3 HIVE一个构建在Hadoop上得数据仓库框架，面向有MySQL基础的同学
+
+HIVE封装了MapReduce的过程，将该过程变成了类MySQL语句而已
+
+2.4 大数据的处理离不开机器学习：
+
+有监督的学习：有标签
+
+无监督的学习：无标签
